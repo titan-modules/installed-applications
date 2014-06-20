@@ -5,18 +5,14 @@
 			"nullable": false
 		},
 		"name": {
-			"type": "text", 
-			"nullable": false
-		}, 
-		"displayName": {
-			"type": "text", 
 			"default": "NULL", 
+			"type": "text"
 		},
 		"displayVersion": {
 			"default": "NULL", 
 			"type": "text"
 		},
-		"processName": {
+		"source": {
 			"default": "NULL", 
 			"type": "text"
 		},
