@@ -88,7 +88,8 @@ class AnalyzeInstalledApplications(object):
 
         # Insert apps to database
         data_science = DataScience(ORM, self.datastore, "installed_apps")
-
+        data_science.get_new_entries()
+        
 if __name__ == "__main__":
 
     start = time()
