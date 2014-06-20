@@ -1,0 +1,28 @@
+{
+	"installed_apps": {
+		"date": {
+			"type": "text", 
+			"nullable": false
+		},
+		"name": {
+			"type": "text", 
+			"nullable": false
+		}, 
+		"displayName": {
+			"type": "text", 
+			"default": "NULL", 
+		},
+		"displayVersion": {
+			"default": "NULL", 
+			"type": "text"
+		},
+		"processName": {
+			"default": "NULL", 
+			"type": "text"
+		},
+		"packageIdentifiers": {
+			"default": "NULL",
+			"type": "text"
+		}
+	}
+}
