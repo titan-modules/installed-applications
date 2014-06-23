@@ -24,6 +24,7 @@ from titantools import plist
 from time import time, gmtime, strftime
 from os.path import dirname,basename,isfile
 from os import chmod
+from titantools.decorators import run_every_60
 
 # Set Logging Status
 logging_enabled = False
@@ -31,6 +32,7 @@ logging_enabled = False
 # Set datastore directory
 DATASTORE = argv[1]
 
+@run_every_60
 class AnalyzeInstalledApplications(object):
     """ AnalyzeInstalledApplications """
 
@@ -47,7 +49,8 @@ class AnalyzeInstalledApplications(object):
 
       for app in apps:
         self.datastore.append({
-          "date": app["date"].now(),
+          "date": exec_date,
+          "install_date": app["date"].now(),
           "displayVersion": app["displayVersion"],
           "packageIdentifiers": ', '.join(app["packageIdentifiers"]),
           "name": app["displayName"],
