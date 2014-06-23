@@ -4,6 +4,10 @@
 			"type": "text", 
 			"default": "NULL"
 		},
+		"install_date": {
+			"type": "text",
+			"default": "NULL",
+		},
 		"name": {
 			"default": "NULL", 
 			"type": "text"
