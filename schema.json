@@ -6,7 +6,7 @@
 		},
 		"install_date": {
 			"type": "text",
-			"default": "NULL",
+			"default": "NULL"
 		},
 		"name": {
 			"default": "NULL", 
