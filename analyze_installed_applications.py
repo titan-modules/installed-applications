@@ -20,11 +20,10 @@ from titantools.orm import TiORM
 from titantools.data_science import DataScience
 from titantools import plist
 
-# from sys import argv
 from time import time, gmtime, strftime
 from os.path import dirname,basename,isfile
 from os import chmod
-from titantools.decorators import run_every_60
+#from titantools.decorators import run_every_5
 
 # Set Logging Status
 logging_enabled = False
@@ -32,7 +31,7 @@ logging_enabled = False
 # Set datastore directory
 DATASTORE = argv[1]
 
-@run_every_60
+#@run_every_5
 class AnalyzeInstalledApplications(object):
     """ AnalyzeInstalledApplications """
 
